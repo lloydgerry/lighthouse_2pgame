@@ -1,27 +1,33 @@
 
+require './player.rb'
+require './question.rb'
+
 
 # Test
-  print "What's your first name? "
-  first_name = gets.chomp
-  first_name.capitalize!
-  
-  print "What's your last name? "
-  last_name = gets.chomp
-  last_name.capitalize!
-  
-  print "What city are you from? "
-  city = gets.chomp
-  city.capitalize!
-  
-  print "What state or province are you from? "
-  state = gets.chomp
-  state.upcase!
+ 
 
-  puts "Your name is #{first_name} #{last_name} and you're from #{city}, #{state}!"
 
   #END test
 
 
-  class Turn
-    def initialize
-    
+
+  correctAnswer = randomNum1 + randomNum2
+
+
+player1 = Player.new("Player1")
+player2 = Player.new("Player2")
+puts player1
+puts player2
+
+  # answer = gets.chomp
+  # answer = answer.to_i
+  # puts answer
+  # if answer == correctAnswer
+  #   puts "Correct!"
+  # else
+  #   puts "Sorry that wasn't correct"  
+  # end
+
+
+  # puts "Player, it is your turn " 
+  # puts rand(20)
